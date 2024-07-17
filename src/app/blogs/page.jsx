@@ -63,6 +63,9 @@ if(content.blogs.length === 0){
   const router = useRouter();
   const iframeRefs = useRef([]);
   const renderDescription = (blocks, height) => {
+    if (!blocks || !Array.isArray(blocks)) {
+      return null; // Return null or a fallback UI when blocks is undefined or not an array
+    }
     return blocks.map((block, index) => {
       switch (block.type) {
         case "header":
