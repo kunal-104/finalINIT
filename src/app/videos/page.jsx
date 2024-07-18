@@ -383,9 +383,9 @@ const Videos = () => {
             ) : (
               <LoginLink postLoginRedirectURL="/videos/addVideo">
                 <Button
-                  //  onClick={() => {
-                  //    router.push('/videos/addVideo');
-                  //  }}
+                   onClick={() => {
+                     alert("You are not loggedIn")
+                   }}
                   className="fixed  text-white bg-bodybg border border-white bottom-8 right-8 z-50"
                   color="default"
                 >

@@ -296,7 +296,7 @@ const blogsLink = Links.find(link => link.name === 'Blogs');
             </Button> :
             <LoginLink postLoginRedirectURL="/blogs/addBlog">
               <Button
-              // onClick={() => router.push("/blogs/addBlog")}
+              onClick={() => alert("You are not loggedIn")}
               className="fixed text-white bg-bodybg border border-white bottom-8 right-8 z-50"
             >
               Add Blog!

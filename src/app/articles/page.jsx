@@ -314,7 +314,7 @@ const articlesLink = Links.find(link => link.name === 'Articles');
             </Button>  :
             <LoginLink postLoginRedirectURL="/articles/addArticle">
               <Button
-              // onClick={() => router.push("/articles/addArticle")}
+              onClick={() =>  alert("You are not loggedIn")}
               className="fixed  bg-bodybg border border-white  text-white bottom-8 right-8 z-50"
             >
               Add Article!
